@@ -1,6 +1,6 @@
 .main {
   position: relative;
-  background: #3A539B;
+  background: #fff;
   left: 260px;
   width: calc(100% - 260px);
   height: 100vh;
@@ -63,4 +63,128 @@
   pointer-events: none;
   transition: .3s ease;
   transition-delay: 0.1s;
+}
+
+
+.main-about__text {
+  max-width: 1170px;
+  margin: 0 auto;
+  margin-top: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  line-height: 130.9%;
+  letter-spacing: 0.1em;
+}
+
+.main-info__wrapp {
+  margin: 0 auto;
+  margin-top: 50px;
+  max-width: 1170px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.main-info {
+  margin-left: 20px;
+}
+
+.main-info__title {
+  font-family: Merriweather;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 23px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #0D4378;
+}
+
+.main-info__news {
+  width: 370px;
+  height: 100%;
+  background-color: lightgray;
+
+  h4 {
+    margin-top: 10px;
+    text-align: center;
+  }
+}
+
+article {
+  padding: 20px;
+}
+
+
+.main-info__transfers,
+.main-info__goldenring {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-around;
+  margin-bottom: 50px;
+  width: 772px;
+}
+
+.cube {
+  position: relative;
+  width: 220px;
+  height: 220px;
+  background: #1081E9;
+
+}
+
+.airports-img {
+  position: absolute;
+}
+
+.transfers-cube:after {
+  position: absolute;
+  content: '';
+  left: 0%;
+  top: 50%;
+  width: 220px;
+  height: 4px;
+  background-color: #fff
+}
+
+.transfers-cube:before {
+  position: absolute;
+  content: '';
+  left: 50%;
+  top: 0%;
+  width: 4px;
+  height: 220px;
+  background-color: #fff
+}
+
+.airports-dme {
+  left: 14%;
+  top: 14%;
+}
+
+.airports-svo {
+  top: 14%;
+  right: 14%;
+}
+
+.airports-vko {
+  bottom: 14%;
+  left: 14%;
+}
+
+.airports-zia {
+  bottom: 14%;
+  right: 14%;
+}
+
+
+p.main-paragraf {
+  margin-left: 20px;
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
 }
