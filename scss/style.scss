@@ -2,13 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Ubuntu', sans-serif;
+  font-family: "Ubuntu", sans-serif;
 }
 
+section {
+  width: calc(100% - 270px);
+  margin-left: 270px;
+  margin-bottom: 10px;
 
+  border: 2px solid orangered;
+}
 
-@import"./block/sidebar";
-@import"./block/main";
-@import"./block/header";
-@import"./block/nav";
-@import"./block/slider"
+@import "./block/sidebar";
+@import "./block/main";
+@import "./block/header";
+@import "./block/nav";
+@import "./block/slider";
+@import "./block/main-info";

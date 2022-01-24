@@ -2,14 +2,16 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
   position: relative;
-  left: 260px;
-  width: calc(100% - 260px);
+  left: 270px;
+  width: calc(100% - 270px);
   height: 60px;
-  background: #0D4378;
+  background: #0d4378;
 }
 
-.header-menu {}
+.header-menu {
+}
 
 .menu-items {
   display: flex;
@@ -19,7 +21,6 @@
 
 .item {
   list-style: none;
-
 }
 
 .link {
@@ -27,8 +28,7 @@
   text-decoration: none;
 }
 
-.item+.item {
-
+.item + .item {
   margin-left: 30px;
 }
 
@@ -36,13 +36,11 @@
   display: none;
 }
 
-
 .social-icons,
 .phone-box {
   color: #fff;
   margin-left: 10px;
   margin-right: 10px;
-
 }
 
 .phone-box {
