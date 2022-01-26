@@ -18,7 +18,14 @@
   display: flex;
   align-items: center;
   padding: 5px;
-  border: 1px solid lime;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.main-info__row:hover {
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .row-cube__wrapp {

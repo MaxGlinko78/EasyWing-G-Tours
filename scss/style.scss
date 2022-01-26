@@ -6,11 +6,16 @@
 }
 
 section {
-  width: calc(100% - 270px);
+  width: calc(100% - 280px);
   margin-left: 270px;
   margin-bottom: 10px;
 
   border: 2px solid orangered;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 @import "./block/sidebar";
@@ -19,3 +24,4 @@ section {
 @import "./block/nav";
 @import "./block/slider";
 @import "./block/main-info";
+@import "./block/transfers";

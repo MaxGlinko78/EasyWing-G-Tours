@@ -1,0 +1,71 @@
+.transfers {
+}
+
+.transfers-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.artc-transfer {
+  max-width: 300px;
+  padding: 20px;
+  border: 3px solid #0d4378;
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 10px;
+}
+.city-title {
+  text-align: center;
+  font-family: Merriweather;
+  font-size: 2em;
+  margin-bottom: 30px;
+  color: #0d4378;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.post-thumbnail {
+  margin-bottom: 30px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.botton-wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.get-booking {
+  padding: 10px 20px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  background: #0d4378;
+}
+
+.get-booking:hover {
+  background: aliceblue;
+  color: #0d4378;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.5s ease-in-out;
+}
+
+.link-to {
+  padding: 10px 10px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: aliceblue;
+  border: none;
+  border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+  background: #0d4378;
+}
+.link-to:hover {
+  background: aliceblue;
+  color: #0d4378;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  transition: all 0.5s ease-in-out;
+}
