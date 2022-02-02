@@ -1,5 +1,5 @@
-.transfers {
-}
+// .transfers {
+// }
 
 .transfers-wrapp {
   display: flex;
@@ -10,8 +10,13 @@
   max-width: 300px;
   padding: 20px;
   border: 3px solid #0d4378;
-  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.artc-transfer:hover {
+  box-shadow: 4px 4px rgba(0, 0, 0, 0.25);
+  transition: all 0.5s ease-in-out;
 }
 .city-title {
   text-align: center;
@@ -68,4 +73,150 @@
   color: #0d4378;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   transition: all 0.5s ease-in-out;
+}
+
+/*=============== transfers in Moscow ===============*/
+
+.title {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 41px;
+  text-align: center;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #0d4378;
+}
+
+.brand-name {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1.2em;
+
+  letter-spacing: 0.05em;
+}
+.brand-name__color {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 1em;
+
+  letter-spacing: 0.05em;
+  color: #1dc4e7;
+}
+
+.transfers-moscow__text {
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+.transfers-moscow__text p {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1em;
+  line-height: 2rem;
+  color: black;
+}
+
+.transfer-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 0fr);
+  grid-gap: 40px;
+  justify-content: center;
+  margin-bottom: 50px;
+  margin-top: 50px;
+}
+.card {
+  padding: 20px;
+  border: 3px solid #1081e9;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+.card-title {
+  margin-bottom: 30px;
+  font-family: Times New Roman;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+
+  color: #3352f8;
+}
+.card-body {
+  display: flex;
+}
+.card-img__wrapp {
+  display: flex;
+  flex-direction: column;
+}
+.card-image {
+  width: 200px;
+  height: 130px;
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+.card-icons__wrapp {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.card-icon {
+  margin-right: 20px;
+}
+.card-body__info {
+  margin-left: 20px;
+  width: 322px;
+}
+.passengers,
+.baggage {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #000000;
+}
+
+.baggage {
+  margin-bottom: 20px;
+}
+
+.subinfo {
+  font-family: Ubuntu;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 16px;
+  letter-spacing: 0.05em;
+  color: #0000005e;
+  margin-bottom: 20px;
+  p {
+    margin-bottom: 10px;
+  }
+}
+.bubble-wrapp {
+  margin-bottom: 20px;
+}
+.bubble {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  span {
+    margin-left: 10px;
+  }
+}
+
+.transfer-card__wrapper .botton-wrapp {
+  justify-content: center;
 }
