@@ -159,7 +159,7 @@
     <section class="transfers">
 
 		<div class="transfers-wrapp">
-			<a href="transfers-msc.html" class="link-moscow">
+			<!-- <a href="transfers-msc.html" class="link-moscow"> -->
 				<article class="artc-transfer">
 					<h3 class="city-title">Moscow</h3>
 					<div class="post-thumbnail">
@@ -168,11 +168,11 @@
 	
 					<div class="botton-wrapp">
 						<button class="get-booking">Booking</button>
-						<a href="#" class="link-to">More info...</a>
+						<a href="transfers-msc.html" class="link-to">More info...</a>
 					</div>
 			
 				</article>
-			</a>
+			<!-- </a> -->
 			
 			<article class="artc-transfer">
 				<h3 class="city-title">Saint Petersburg</h3>
@@ -203,6 +203,48 @@
 
 
 	 </section>	
+
+
+	 <div class="modal" id="more_question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			 <div class="modal-content">
+				  <div class="modal-header">
+						<h4 class="header-modal__question--title"> Fill out the order form <br>We will contact you within 10 minutes  
+						</h4>
+						<button type="button" class="header-modal__close" data-dismiss="modal"
+							 aria-hidden="true">&times;</button>
+				  </div>
+				  <div class="modal-body text-center">
+						<div class="row question">
+							 <form action="#" metod="post">
+								  <!-- <input type="hidden" name="what" value="Booking"> -->
+
+								  <input name=nome type="text" autocomplete="off" required placeholder="Your Name"class="form-control form-input__name">
+								  <input name=phone type="text" autocomplete="off" required placeholder="Your phone number"class="form-control form-input__phone">
+								  <input name=email type="text" autocomplete="off" required placeholder="E-Mail"class="form-control form-input__mail">
+									<input name="city" list="cities" class="form-control" required placeholder="Choose a city" />
+										<datalist id="cities">
+											<option value="Moscow" />
+											<option value="Saint Petersburg" />
+											
+										</datalist>
+										<input type="date" class="form-control">
+
+								  <textarea class="form-control textarea" name="question" placeholder="Your message" cols="30"
+										rows="15"></textarea>
+								  <button class="form-control__btn" type="submit">Send</button>
+
+
+							 </form>
+
+						</div>
+
+				  </div>
+			 </div>
+		</div>
+  </div>
+
+
 
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="js/swiper.js"></script>

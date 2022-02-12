@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -809,6 +810,7 @@ p.row-content__paragraph {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 100%;
 }
 
 .get-booking {
@@ -902,24 +904,97 @@ p.row-content__paragraph {
 }
 
 .transfer-card__wrapper {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (0fr)[2];
-      grid-template-columns: repeat(2, 0fr);
-  grid-gap: 40px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .card {
+  width: 25%;
+  height: 75%;
+  position: relative;
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
   padding: 20px;
   border: 3px solid #1081e9;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   border-radius: 10px;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 1s;
+  transition: 1s;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  border-radius: 10px;
+}
+
+.front {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #fff;
+}
+
+.back {
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  background-color: #0d437836;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.title-back {
+  margin-top: 30px;
+}
+
+.subinfo-back {
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #0d4378;
+}
+
+.active .front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.active .back {
+  -webkit-transform: rotateY(360deg);
+          transform: rotateY(360deg);
 }
 
 .card-title {
@@ -939,6 +1014,10 @@ p.row-content__paragraph {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .card-img__wrapp {
@@ -952,6 +1031,7 @@ p.row-content__paragraph {
 }
 
 .card-image {
+  margin: 0 auto;
   width: 200px;
   height: 130px;
 }
@@ -971,6 +1051,8 @@ p.row-content__paragraph {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .card-icon {
@@ -1031,7 +1113,100 @@ p.row-content__paragraph {
 }
 
 .transfer-card__wrapper .botton-wrapp {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+/*============   Диалоговые окна Форма ===========*/
+.modal {
+  display: none;
+  position: fixed;
+  top: 10%;
+  right: 35%;
+  z-index: 9999;
+  -webkit-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.modal-dialog {
+  width: 380px;
+  margin-top: 5%;
+  text-align: center;
+  border: 3px solid white;
+  background: rgba(13, 67, 120, 0.85);
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 20px;
+}
+
+.header-modal__question--title {
+  margin: 0 auto;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.header-modal__close {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+  border: none;
+  background: none;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffbb01;
+  cursor: pointer;
+}
+
+.form-control {
+  width: 309px;
+  height: 63px;
+  background: #f8f8f8;
+  -webkit-box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+          box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding-left: 15px;
+}
+
+.textarea {
+  padding-top: 20px;
+  height: 200px;
+}
+
+.form-control__btn {
+  width: 208px;
+  height: 41px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fdde76), to(#ffbb01));
+  background: linear-gradient(180deg, #fdde76 0%, #ffbb01 100%);
+  border-radius: 5px 5px 10px 10px;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+  padding: 13px 40px;
+  cursor: pointer;
+}
+
+.form-control__btn:hover {
+  -webkit-box-shadow: 0px 4px 0px #b68500;
+          box-shadow: 0px 4px 0px #b68500;
+}
+
+.active {
+  display: block;
+  -webkit-transition: 1.5s ease-in-out;
+  transition: 1.5s ease-in-out;
 }

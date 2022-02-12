@@ -37,6 +37,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 .get-booking {
   padding: 10px 20px;
@@ -123,19 +124,90 @@
 }
 
 .transfer-card__wrapper {
-  display: grid;
-  grid-template-columns: repeat(2, 0fr);
-  grid-gap: 40px;
-  justify-content: center;
-  margin-bottom: 50px;
-  margin-top: 50px;
+  //   display: grid;
+  //   grid-template-columns: repeat(3, 0fr);
+  //   grid-gap: 40px;
+  //   justify-content: center;
+  //   margin-bottom: 50px;
+  //   margin-top: 50px;
+
+  position: absolute;
+  width: 85%;
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
 }
+
 .card {
+  width: 25%;
+  height: 75%;
+  position: relative;
+  perspective: 1000px;
+
   padding: 20px;
   border: 3px solid #1081e9;
-  box-sizing: border-box;
   border-radius: 10px;
 }
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 1s;
+  backface-visibility: hidden;
+  border-radius: 10px;
+}
+.front {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.back {
+  align-items: baseline;
+  background-color: #0d437836;
+  transform: rotateY(180deg);
+}
+
+.title-back {
+  margin-top: 30px;
+}
+
+.subinfo-back {
+  color: #000000;
+  margin-bottom: 20px;
+}
+hr {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  border: 1px solid #0d4378;
+}
+
+.back-btn {
+}
+
+.active {
+  .front {
+    transform: rotateY(180deg);
+  }
+  .back {
+    transform: rotateY(360deg);
+  }
+}
+
+// .card:hover .front {
+//   transform: rotateY(180deg);
+// }
+// .card:hover .back {
+//   transform: rotateY(360deg);
+// }
+
 .card-title {
   margin-bottom: 30px;
   font-family: Times New Roman;
@@ -151,12 +223,14 @@
 }
 .card-body {
   display: flex;
+  flex-direction: column;
 }
 .card-img__wrapp {
   display: flex;
   flex-direction: column;
 }
 .card-image {
+  margin: 0 auto;
   width: 200px;
   height: 130px;
   img {
@@ -168,6 +242,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  margin: 0 auto;
+  margin-bottom: 20px;
 }
 
 .card-icon {
@@ -218,5 +294,5 @@
 }
 
 .transfer-card__wrapper .botton-wrapp {
-  justify-content: center;
+  justify-content: space-around;
 }
