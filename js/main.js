@@ -34,15 +34,22 @@ getButton.forEach(function(item){
 });
 
 const linkTo = document.querySelectorAll(".link-to");
-const card = document.querySelector('.card');
-
 const active = document.querySelector('.active');
 
 		
 linkTo.forEach(function(item){
 	item.addEventListener('click', () => {
+		const card = document.querySelectorAll('.card');
+		card.forEach(function(c){
+			c.addEventListener('click',(item)=>{
+				c.classList.toggle('active');
+
+			});
+			
+		});
 		
-		card.classList.toggle('active');
+
+		
 	     
 	 });
 

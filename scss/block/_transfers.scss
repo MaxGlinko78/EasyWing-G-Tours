@@ -39,7 +39,7 @@
   justify-content: space-between;
   width: 100%;
 }
-.get-booking {
+.btn {
   padding: 10px 20px;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 0.2em;
@@ -49,9 +49,10 @@
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
   background: #0d4378;
+  cursor: pointer;
 }
 
-.get-booking:hover {
+.btn:hover {
   background: aliceblue;
   color: #0d4378;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -68,6 +69,7 @@
   border-radius: 10px;
   transition: all 0.5s ease-in-out;
   background: #0d4378;
+  cursor: pointer;
 }
 .link-to:hover {
   background: aliceblue;
@@ -124,27 +126,20 @@
 }
 
 .transfer-card__wrapper {
-  //   display: grid;
-  //   grid-template-columns: repeat(3, 0fr);
-  //   grid-gap: 40px;
-  //   justify-content: center;
-  //   margin-bottom: 50px;
-  //   margin-top: 50px;
-
   position: absolute;
-  width: 85%;
-  height: 100%;
+  width: calc(100% - 280px);
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .card {
-  width: 25%;
-  height: 75%;
+  margin-bottom: 10px;
+  width: 350px;
+  height: 700px;
   position: relative;
   perspective: 1000px;
-
   padding: 20px;
   border: 3px solid #1081e9;
   border-radius: 10px;
@@ -253,15 +248,20 @@ hr {
   margin-left: 20px;
   width: 322px;
 }
+.passangers-info {
+  padding: 0 20px;
+}
+
 .passengers,
 .baggage {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 16px;
   letter-spacing: 0.05em;
   color: #000000;
+  margin-bottom: 5px;
 }
 
 .baggage {
@@ -277,12 +277,15 @@ hr {
   letter-spacing: 0.05em;
   color: #0000005e;
   margin-bottom: 20px;
+  padding: 20px;
   p {
     margin-bottom: 10px;
   }
 }
+
 .bubble-wrapp {
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 .bubble {
   display: flex;

@@ -813,7 +813,7 @@ p.row-content__paragraph {
   width: 100%;
 }
 
-.get-booking {
+.btn {
   padding: 10px 20px;
   font-family: "Ubuntu", sans-serif;
   letter-spacing: 0.2em;
@@ -824,9 +824,10 @@ p.row-content__paragraph {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #0d4378;
+  cursor: pointer;
 }
 
-.get-booking:hover {
+.btn:hover {
   background: aliceblue;
   color: #0d4378;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
@@ -846,6 +847,7 @@ p.row-content__paragraph {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   background: #0d4378;
+  cursor: pointer;
 }
 
 .link-to:hover {
@@ -905,8 +907,7 @@ p.row-content__paragraph {
 
 .transfer-card__wrapper {
   position: absolute;
-  width: 85%;
-  height: 100%;
+  width: calc(100% - 280px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -916,11 +917,14 @@ p.row-content__paragraph {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .card {
-  width: 25%;
-  height: 75%;
+  margin-bottom: 10px;
+  width: 350px;
+  height: 700px;
   position: relative;
   -webkit-perspective: 1000px;
           perspective: 1000px;
@@ -1064,15 +1068,20 @@ hr {
   width: 322px;
 }
 
+.passangers-info {
+  padding: 0 20px;
+}
+
 .passengers,
 .baggage {
   font-family: Ubuntu;
   font-style: normal;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8em;
   line-height: 16px;
   letter-spacing: 0.05em;
   color: #000000;
+  margin-bottom: 5px;
 }
 
 .baggage {
@@ -1088,6 +1097,7 @@ hr {
   letter-spacing: 0.05em;
   color: #0000005e;
   margin-bottom: 20px;
+  padding: 20px;
 }
 
 .subinfo p {
@@ -1096,6 +1106,7 @@ hr {
 
 .bubble-wrapp {
   margin-bottom: 20px;
+  padding: 0 20px;
 }
 
 .bubble {
@@ -1121,7 +1132,7 @@ hr {
 .modal {
   display: none;
   position: fixed;
-  top: 10%;
+  top: 5%;
   right: 35%;
   z-index: 9999;
   -webkit-transition: 0.5s ease-in-out;
