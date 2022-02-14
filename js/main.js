@@ -43,16 +43,10 @@ linkTo.forEach(function(item){
 		card.forEach(function(c){
 			c.addEventListener('click',(item)=>{
 				c.classList.toggle('active');
-
-			});
-			
+			});			
 		});
-		
-
-		
 	     
 	 });
-
 		
 });
 

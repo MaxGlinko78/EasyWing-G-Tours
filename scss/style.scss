@@ -18,6 +18,22 @@ a {
   color: black;
 }
 
+h3 {
+  font-family: Merriweather;
+  font-size: 2em;
+  color: #0d4378;
+  -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+p {
+  font-family: "Lato", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1;
+}
+
 @import "./block/sidebar";
 @import "./block/main";
 @import "./block/header";
@@ -26,3 +42,5 @@ a {
 @import "./block/main-info";
 @import "./block/transfers";
 @import "./block/popup";
+@import "./block/golden";
+@import "./block/suzdal";

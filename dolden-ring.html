@@ -79,7 +79,7 @@
             <li><a href="transfers-msc.html">Moscow</a></li>
             <li><a href="#">Saint Petersburg</a></li>
             <!-- <li><a href="#">PHP & MySQL</a></li> -->
-            <li><a href="dolden-ring.html">Golden Ring</a></li>
+            <li><a href="#">Golden Ring</a></li>
           </ul>
         </li>
         <li>
@@ -156,53 +156,38 @@
       </ul>
     </div>
     <!-- sidebar -->
-    <section class="transfers">
+    <section class="golden-ring">
+		<h2 class="golden-ring__title title">Golden Ring</h2>
+		 <div class="cities-wrapp">	
 
-		<div class="transfers-wrapp">
-			<!-- <a href="transfers-msc.html" class="link-moscow"> -->
-				<article class="artc-transfer">
-					<h3 class="city-title">Moscow</h3>
-					<div class="post-thumbnail">
-						<img src="img/kremlin.jpg" alt="moscow kremlin" class="city-picture">
+			<article class="gr-city">				
+				<div class="col-sm-4">
+					<div class="image-hover__box">
+						 <div class="image_box">
+							  <img src="img/gr-towns/suzdal.jpg" alt="" class="img-responcive">			
+							  <p class="image_box__text"><b>Су́здаль</b> — город-заповедник во Владимирской области России, административный центр Суздальского района. Расположен на реке Каменке, притоке реки Нерли, в 26 км к северу от Владимира. Входит в Золотое кольцо России. Образует муниципальное образование город Суздаль со статусом городского поселения как единственный населённый пункт в его составе[2]. Население — 9597[1] чел. (2021).</p>
+
+						 </div>
+						 <div class="image-hover__content">
+							<h3 class="gr-city__title" >Suzdal</h3>
+							  <p class="image_box__prise">Один день 20 000руб </p>
+							  <p class="image_box__prise">Один день 20 000руб </p>
+									<a href="suzdal.html" class="btn btn-light btnD">Read More</a>
+									<button class="get-booking btn suzdal-btn ">Booking</button>
+						 </div>
 					</div>
-	
-					<div class="botton-wrapp">
-						<button class="get-booking btn">Booking</button>
-						<a href="transfers-msc.html" class="link-to">More info...</a>
-					</div>
-			
-				</article>
-			<!-- </a> -->
-			
-			<article class="artc-transfer">
-				<h3 class="city-title">Saint Petersburg</h3>
-				<div class="post-thumbnail">
-					<img src="img/kremlin.jpg" alt="moscow kremlin" class="city-picture">
-				</div>
-
-				<div class="botton-wrapp">
-					<button class="get-booking btn">Booking</button>
-					<a href="#" class="link-to">More info...</a>
-				</div>
-		
+			  </div>
 			</article>
-			<article class="artc-transfer">
-				<h3 class="city-title">Golden Ring</h3>
-				<div class="post-thumbnail">
-					<img src="img/kremlin.jpg" alt="moscow kremlin" class="city-picture">
-				</div>
-
-				<div class="botton-wrapp">
-					<button class="get-booking btn">Booking</button>
-					<a href="dolden-ring.html" class="link-to">More info...</a>
-				</div>
 		
-			</article>
 
-		</div>
+
+		 </div>
+
 
 
 	 </section>	
+
+	 
 
 
 	 <div class="modal" id="more_question" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -224,9 +209,7 @@
 								  <input name=email type="text" autocomplete="off" required placeholder="E-Mail"class="form-control form-input__mail">
 									<input name="city" list="cities" class="form-control" required placeholder="Choose a city" />
 										<datalist id="cities">
-											<option value="Moscow" />
-											<option value="Saint Petersburg" />
-											
+											<option value="Suzdal" />
 										</datalist>
 										<input type="date" class="form-control">
 
